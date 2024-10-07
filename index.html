@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking List View - Version 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="booking-list-container">
+        <h1>Booking List View - Current Appointments</h1>
+        <table class="booking-table">
+            <thead>
+                <tr>
+                    <th>Patient Name</th>
+                    <th>Service</th>
+                    <th>Practitioner</th>
+                    <th>Platform</th>
+                    <th>Date and Time</th>
+                    <th>Status</th>
+                    <th>Sessions</th>
+                    <th>AHTR Form</th>
+                    <th>Case Notes</th>
+                </tr>
+            </thead>
+            <tbody id="booking-list">
+                <!-- Placeholder for dynamic content -->
+            </tbody>
+        </table>
+
+        <!-- Pagination Controls -->
+        <div class="pagination">
+            <button id="prev-page" disabled>Previous</button>
+            <span id="page-number">Page 1</span>
+            <button id="next-page">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Booking List Container */
+.booking-list-container,
+.patient-details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Booking Table Styles */
+.booking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.booking-table th,
+.booking-table td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    word-wrap: break-word;
+}
+
+.booking-table th {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.booking-table td {
+    vertical-align: middle;
+    background-color: #ffffff;
+}
+
+.booking-table tr:nth-child(even) td {
+    background-color: #f7f7f7;
+}
+
+/* Patient Link Styles */
+.patient-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.patient-link:hover {
+    color: #2980b9;
+}
+
+/* Button Styles */
+.form-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.form-button.optional-ahtr {
+    background-color: #3498db;
+    color: white;
+}
+
+.form-button.optional-ahtr:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.form-button.mandatory-ahtr {
+    background-color: #f39c12;
+    color: white;
+}
+
+.form-button.mandatory-ahtr:hover {
+    background-color: #e67e22;
+    transform: translateY(-2px);
+}
+
+.form-button.completed {
+    background-color: #2ecc71;
+    color: white;
+    cursor: default;
+}
+
+.form-button.pending {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.form-button.pending:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Progress Bar Styles */
+.progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 12px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0%;
+    transition: width 0.5s ease;
+}
+
+/* Pagination Controls */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 0;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.pagination button:disabled {
+    background-color: #b0c4de;
+    cursor: not-allowed;
+}
+
+#page-number {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2em;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .booking-list-container,
+    .patient-details-container {
+        padding: 15px;
+    }
+
+    .booking-table th,
+    .booking-table td,
+    table th,
+    table td {
+        padding: 10px 10px;
+        font-size: 0.9em;
+    }
+
+    .form-button {
+        padding: 8px 15px;
+        font-size: 0.8em;
+    }
+
+    .pagination button {
+        padding: 8px 15px;
+        font-size: 0.8em;
+    }
+}
